@@ -83,26 +83,6 @@ def extractUniqueFaces(humeJsonFpath, totalNumberOfUniqueFaces):
 
 
 def main():
-  """
-  An example output of the function above is:
-    {'unique_face_0': {'face_0'},
-    'unique_face_1': {'face_1'},
-    'unique_face_10': {'face_6'},
-    'unique_face_11': {'face_4'},
-    'unique_face_12': {'face_7'},
-    'unique_face_13': {'face_2'},
-    'unique_face_14': {'face_8'},
-    'unique_face_2': {'face_16'},
-    'unique_face_3': {'face_10'},
-
-    # Note that face_3, face_9, and face_15 are all the same person, attched to unique_face_4
-    'unique_face_4': {'face_3', 'face_9', 'face_15'},
-    'unique_face_5': {'face_11'},
-    'unique_face_6': {'face_12'},
-    'unique_face_7': {'face_5'},
-    'unique_face_8': {'face_13'},
-    'unique_face_9': {'face_14'}}
-  """
   pprint(extractUniqueFaces("data/futsal.json", 15))
 
 if __name__ == "__main__":
