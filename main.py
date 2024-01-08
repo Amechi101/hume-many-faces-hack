@@ -80,3 +80,13 @@ def extractUniqueFaces(humeJsonFpath, totalNumberOfUniqueFaces):
     for i, c in enumerate(tqdm(components, desc="making json object...")):
         jsonObject.update({f"unique_face_{i}":c})
     return jsonObject
+
+
+def main():
+  # Example usage:
+  # path to hume json file
+  # total number of unique faces to extract
+  pprint(extractUniqueFaces("path/to/hume/json/file", 15))
+
+if __name__ == "__main__":
+  main()
