@@ -80,10 +80,3 @@ def extractUniqueFaces(humeJsonFpath, totalNumberOfUniqueFaces):
     for i, c in enumerate(tqdm(components, desc="making json object...")):
         jsonObject.update({f"unique_face_{i}":c})
     return jsonObject
-
-
-def main():
-  pprint(extractUniqueFaces("data/futsal.json", 15))
-
-if __name__ == "__main__":
-  main()
